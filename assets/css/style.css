@@ -238,4 +238,25 @@ body.light-mode .contact-list li {
 body.light-mode .contact-list a {
   color: #0f8a75;
 }
+/* CARD HOVER ANIMATIONS */
+.project-card,
+.blog-post,
+.photo-grid img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform: translateY(0);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.project-card:hover,
+.blog-post:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(88, 225, 193, 0.2);
+}
+
+/* Optional image hover effect for Photos section */
+.photo-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(88, 225, 193, 0.3);
+  cursor: pointer;
+}
 
