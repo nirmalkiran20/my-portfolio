@@ -259,4 +259,100 @@ body.light-mode .contact-list a {
   box-shadow: 0 8px 20px rgba(88, 225, 193, 0.3);
   cursor: pointer;
 }
+/* TIMELINE STYLES */
+.timeline {
+  position: relative;
+  margin-top: 40px;
+  display: grid;
+  gap: 60px;
+}
+
+.timeline-item {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.timeline-item.left .timeline-content {
+  margin-left: 60px;
+}
+.timeline-item.right {
+  flex-direction: row-reverse;
+}
+.timeline-item.right .timeline-content {
+  margin-right: 60px;
+  text-align: right;
+}
+
+.logo-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #58e1c1;
+  color: #0f0f0f;
+  font-weight: bold;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 0 6px rgba(0,0,0,0.3);
+}
+
+.timeline-content {
+  max-width: 500px;
+}
+.timeline-content h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+}
+.timeline-content .company {
+  color: #58e1c1;
+  font-weight: 500;
+}
+.timeline-content .date {
+  color: #aaa;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+.timeline-content p {
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+/* LIGHT MODE */
+body.light-mode .logo-circle {
+  background-color: #0f8a75;
+  color: #fff;
+}
+body.light-mode .timeline-content h3 {
+  color: #111;
+}
+body.light-mode .timeline-content p {
+  color: #333;
+}
+body.light-mode .timeline-content .company {
+  color: #0f8a75;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .timeline-item {
+    flex-direction: column !important;
+    align-items: flex-start;
+  }
+  .timeline-item.right .timeline-content {
+    text-align: left;
+    margin-right: 0;
+  }
+  .timeline-item.left .timeline-content {
+    margin-left: 0;
+  }
+  .logo-circle {
+    margin-bottom: 10px;
+  }
+}
 
