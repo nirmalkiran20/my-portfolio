@@ -286,19 +286,22 @@ body.light-mode .contact-list a {
   text-align: right;
 }
 
-.logo-circle {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: #58e1c1;
-  color: #0f0f0f;
-  font-weight: bold;
-  font-size: 0.9rem;
+.logo-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  overflow: hidden;
+  flex-shrink: 0;
+  background: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-shrink: 0;
-  box-shadow: 0 0 6px rgba(0,0,0,0.3);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+.logo-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .timeline-content {
