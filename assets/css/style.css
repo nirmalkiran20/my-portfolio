@@ -416,4 +416,67 @@ body.light-mode .experience-content p {
 body.light-mode .experience-content .company {
   color: #0f8a75;
 }
+/* WORK EXPERIENCE */
+.section-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+.company-logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  object-fit: contain;
+  background: #fff;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+}
+.timeline-content {
+  flex: 1;
+}
+.timeline-content h3 {
+  margin: 0;
+  color: #58e1c1;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.timeline-content .role {
+  font-weight: 500;
+  color: #ccc;
+  margin: 4px 0;
+}
+.timeline-content .date {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-bottom: 8px;
+}
+.timeline-content p {
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+/* Light Mode Overrides */
+body.light-mode .timeline-content h3 {
+  color: #0f8a75;
+}
+body.light-mode .timeline-content .role {
+  color: #444;
+}
+body.light-mode .timeline-content p,
+body.light-mode .timeline-content .date {
+  color: #333;
+}
 
